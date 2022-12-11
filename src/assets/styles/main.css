@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*  custom property  */
+    --color-1: #2B3A55;
+    --color-2: #CE7777;
+    --color-3: #E8C4C4;
+    --color-4: #F2E5E5;
+
+    --padding-1: 24px;
+}
+
+
+#root {
+    border: 1px solid black;
+}
+
+#root > header, #root > footer {
+    background-color: var(--color-1);
+    color: #eebaba;
+    padding: var(--padding-1);
+}
+
+main {
+    background-color: 2px solid var(--color-1);
+    padding: var(--padding-1)
+}
+
+main section {
+    height: 100vh;
+}
+
+main section:first-child {
+    background-color: var(--color-2);
+}
+
+main section:nth-child(2) {
+    background-color: var(--color-3);
+}
+
+main section:nth-child(3) {
+    background-color: var(--color-4);
+}
